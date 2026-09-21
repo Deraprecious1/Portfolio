@@ -321,6 +321,35 @@
       color: #fff !important;
     }
 
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      padding: 10px 15px;
+      border: 1px solid #555;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .contact-links a:hover {
+      background: #2a2a2a;
+      border-color: #777;
+    }
+
+    .contact-links a:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 3px;
+    }
+
 
     /* ---------- Back to Top ---------- */
 
@@ -451,7 +480,8 @@
       }
 
       .button,
-      #backToTop {
+      #backToTop,
+      .contact-links a {
         transition: none;
       }
     }
@@ -722,6 +752,22 @@
     <p class="contact-name">
       Onuh Chidera Precious
     </p>
+
+    <div class="contact-links">
+
+      <a href="mailto:deraprecious24@gmail.com">
+        Email
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/chidera-onuh-4672a2315/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+    </div>
 
   </section>
 
