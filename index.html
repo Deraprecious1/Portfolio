@@ -1,59 +1,690 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Onuh Chidera Precious — Strategy & Creative Portfolio</title>
-<meta name="description" content="Selected strategy, brand, content and customer-focused work by Onuh Chidera Precious.">
-<style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#171717;background:#f7f6f2;line-height:1.6}.wrap{max-width:960px;margin:auto;padding:0 24px}header{padding:72px 0 52px}.eyebrow{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#666}h1{font-size:clamp(42px,7vw,72px);line-height:1.02;margin:14px 0 18px;letter-spacing:-2px}.intro{max-width:680px;font-size:20px;color:#444}.tagline{display:inline-block;margin-top:22px;padding:10px 14px;background:#171717;color:#fff;border-radius:999px;font-size:14px;font-weight:700}section{padding:46px 0;border-top:1px solid #ddd9d0}h2{font-size:30px;margin:0 0 10px;letter-spacing:-.6px}.section-intro{color:#666;max-width:680px;margin-bottom:28px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:#fff;border:1px solid #e4e1da;border-radius:18px;padding:24px}.card .type{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;color:#777}.card h3{margin:8px 0;font-size:23px}.card p{margin:0;color:#555}.card strong{color:#171717}.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:9px 13px;border:1px solid #d8d4cc;border-radius:999px;background:#fff;font-size:14px}.contact{background:#171717;color:#fff;border-radius:24px;padding:34px;margin:46px 0 70px}.contact p{color:#ddd}footer{padding:0 0 40px;color:#777;font-size:13px}@media(max-width:700px){.grid{grid-template-columns:1fr}header{padding-top:48px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Onuh Chidera Precious — Strategy, Product Marketing & Growth</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Onuh Chidera Precious, a business strategist focused on product marketing, growth, customer insight and practical business strategy."
+  >
+
+  <meta name="author" content="Onuh Chidera Precious">
+  <meta name="theme-color" content="#171717">
+
+  <style>
+    /* ---------- Base ---------- */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+      color: #171717;
+      background: #f7f6f2;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ---------- Accessibility ---------- */
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    .skip-link:focus {
+      position: fixed;
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      padding: 10px 14px;
+      background: #171717;
+      color: #fff;
+      border-radius: 8px;
+      z-index: 999;
+    }
+
+    :focus-visible {
+      outline: 3px solid #171717;
+      outline-offset: 4px;
+    }
+
+    /* ---------- Navigation ---------- */
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      border-bottom: 1px solid #ddd9d0;
+    }
+
+    .nav-name {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #555;
+    }
+
+    .nav-links a:hover {
+      color: #171717;
+    }
+
+    /* ---------- Hero ---------- */
+
+    header {
+      padding: 88px 0 72px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    h1 {
+      max-width: 900px;
+      font-size: clamp(46px, 8vw, 82px);
+      line-height: 0.98;
+      margin: 16px 0 24px;
+      letter-spacing: -3px;
+    }
+
+    .intro {
+      max-width: 720px;
+      font-size: clamp(19px, 2.5vw, 23px);
+      color: #444;
+      margin: 0;
+    }
+
+    .hero-positioning {
+      margin-top: 26px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #171717;
+      letter-spacing: 0.1px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 17px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 800;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .button-primary {
+      background: #171717;
+      color: #fff;
+    }
+
+    .button-secondary {
+      border: 1px solid #cfcac0;
+      background: transparent;
+      color: #171717;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: 0.88;
+    }
+
+    /* ---------- Sections ---------- */
+
+    section {
+      padding: 58px 0;
+      border-top: 1px solid #ddd9d0;
+      scroll-margin-top: 30px;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 36px);
+      line-height: 1.15;
+      margin: 0 0 12px;
+      letter-spacing: -1px;
+    }
+
+    .section-intro {
+      color: #666;
+      max-width: 720px;
+      margin: 0 0 30px;
+    }
+
+    /* ---------- Skills ---------- */
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      padding: 9px 14px;
+      border: 1px solid #d8d4cc;
+      border-radius: 999px;
+      background: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* ---------- Cards ---------- */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e4e1da;
+      border-radius: 18px;
+      padding: 26px;
+    }
+
+    .card .type {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 800;
+      color: #777;
+    }
+
+    .card h3 {
+      margin: 9px 0 10px;
+      font-size: 23px;
+      line-height: 1.2;
+      letter-spacing: -0.4px;
+    }
+
+    .card p {
+      margin: 0;
+      color: #555;
+    }
+
+    .card p + p {
+      margin-top: 12px;
+    }
+
+    .card strong {
+      color: #171717;
+    }
+
+    /* ---------- Portfolio Note ---------- */
+
+    .portfolio-note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-left: 3px solid #171717;
+      background: #eeece6;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* ---------- Thinking Framework ---------- */
+
+    .number {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #888;
+    }
+
+    /* ---------- Experience ---------- */
+
+    .experience-title {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    .strengths {
+      margin-top: 18px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* ---------- Contact ---------- */
+
+    .contact {
+      background: #171717;
+      color: #fff;
+      border-radius: 24px;
+      padding: 40px;
+      margin: 58px 0 72px;
+    }
+
+    .contact h2 {
+      color: #fff;
+    }
+
+    .contact p {
+      color: #ddd;
+      max-width: 700px;
+    }
+
+    .contact-name {
+      margin-top: 22px;
+      font-weight: 800;
+      color: #fff !important;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+      padding: 0 0 40px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    /* ---------- Responsive ---------- */
+
+    @media (max-width: 700px) {
+
+      .wrap {
+        padding: 0 20px;
+      }
+
+      nav {
+        align-items: flex-start;
+        gap: 14px;
+      }
+
+      .nav-links {
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      header {
+        padding: 58px 0 52px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 22px;
+      }
+
+      .contact {
+        padding: 28px;
+        border-radius: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .nav-name {
+        max-width: 150px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .button {
+        transition: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <div class="wrap">
-<header>
-<div class="eyebrow">Strategy • Brand • Content • Customer Insight</div>
-<h1>Onuh Chidera Precious</h1>
-<p class="intro">I’m a business strategist with a focus on product marketing and growth. I enjoy turning customer behaviour and business problems into clear ideas, campaigns and practical strategies.</p>
-<span class="tagline">Selected Work</span>
-</header>
 
-<section>
-<h2>What I work on</h2>
-<p class="section-intro">My work sits at the intersection of strategy, customer understanding, marketing and business execution.</p>
-<div class="skills">
-<span class="skill">Content Strategy</span><span class="skill">Copywriting</span><span class="skill">Brand Strategy</span><span class="skill">Customer Insight</span><span class="skill">Growth Strategy</span><span class="skill">Product Marketing</span><span class="skill">Market Research</span><span class="skill">Business Analysis</span>
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <div class="nav-name">Onuh Chidera Precious</div>
+
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <header id="main-content">
+
+    <div class="eyebrow">
+      Strategy • Product Marketing • Growth • Customer Insight
+    </div>
+
+    <h1>Onuh Chidera Precious</h1>
+
+    <p class="intro">
+      I’m a business strategist focused on product marketing and growth.
+      I turn customer behaviour, market signals and business problems into
+      clear ideas, practical strategies and executable marketing initiatives.
+    </p>
+
+    <div class="hero-positioning">
+      Strategy-minded. Customer-led. Commercially grounded.
+    </div>
+
+    <div class="hero-actions">
+      <a class="button button-primary" href="#work">
+        View selected work
+      </a>
+
+      <a class="button button-secondary" href="#contact">
+        Let’s connect
+      </a>
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- Skills -->
+    <section aria-labelledby="skills-heading">
+
+      <h2 id="skills-heading">What I work on</h2>
+
+      <p class="section-intro">
+        My work sits at the intersection of business strategy,
+        customer understanding, marketing and execution.
+      </p>
+
+      <div class="skills">
+        <span class="skill">Content Strategy</span>
+        <span class="skill">Copywriting</span>
+        <span class="skill">Brand Strategy</span>
+        <span class="skill">Customer Insight</span>
+        <span class="skill">Growth Strategy</span>
+        <span class="skill">Product Marketing</span>
+        <span class="skill">Market Research</span>
+        <span class="skill">Business Analysis</span>
+      </div>
+
+    </section>
+
+
+    <!-- Selected Work -->
+    <section id="work" aria-labelledby="work-heading">
+
+      <h2 id="work-heading">Selected Work</h2>
+
+      <p class="section-intro">
+        A selection of independent analyses and concept projects demonstrating
+        how I approach business and marketing problems: understand the audience,
+        identify the insight, develop the idea and connect it to a clear objective.
+      </p>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="type">Brand Strategy</div>
+
+          <h3>Dior, Gucci &amp; Louis Vuitton</h3>
+
+          <p>
+            Comparative brand analyses exploring positioning, customer psychology,
+            differentiation, brand experience and the cultural signals that help
+            premium brands remain relevant.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="type">Growth &amp; Marketing</div>
+
+          <h3>FreshDrop Laundry</h3>
+
+          <p>
+            A customer-focused marketing concept built around convenience,
+            trust and doorstep delivery, translating a simple service proposition
+            into positioning, messaging and a practical customer acquisition idea.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="type">Content Strategy</div>
+
+          <h3>Unified Dating</h3>
+
+          <p>
+            Social content concepts designed to create emotional connection,
+            strengthen brand consistency and translate an offline dating
+            proposition into relatable short-form content.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="type">Campaign Strategy</div>
+
+          <h3>SeekProv — Owerri Launch</h3>
+
+          <p>
+            <strong>“Who’s Your Person?”</strong> — a local launch concept built
+            around a familiar behaviour: asking friends, family or WhatsApp
+            contacts for trusted service recommendations. The campaign reframes
+            SeekProv as a simpler way to find the right person when a service
+            is needed.
+          </p>
+        </article>
+
+      </div>
+
+
+      <div class="portfolio-note">
+        Selected projects include independent analyses, strategic exercises
+        and concept work created to demonstrate strategic thinking, creative
+        development and execution. They do not imply client endorsement or
+        commissioned work unless explicitly stated.
+      </div>
+
+    </section>
+
+
+    <!-- Approach -->
+    <section id="approach" aria-labelledby="approach-heading">
+
+      <h2 id="approach-heading">How I Think</h2>
+
+      <p class="section-intro">
+        I approach strategy by starting with the problem and the people affected
+        by it, then connecting insight to practical execution.
+      </p>
+
+      <div class="grid">
+
+        <article class="card">
+          <div class="number">01</div>
+
+          <h3>Start with behaviour</h3>
+
+          <p>
+            I look at what people already do, say and struggle with before
+            jumping into content, campaigns or tactics.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="number">02</div>
+
+          <h3>Find the insight</h3>
+
+          <p>
+            I look for the simple human truth behind the problem — something
+            specific enough to shape a meaningful strategy and natural enough
+            for the audience to recognise.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="number">03</div>
+
+          <h3>Connect the idea to an objective</h3>
+
+          <p>
+            Creative work should have a reason to exist. I connect ideas to
+            objectives such as awareness, engagement, acquisition, retention
+            or improving the customer experience.
+          </p>
+        </article>
+
+
+        <article class="card">
+          <div class="number">04</div>
+
+          <h3>Make the strategy executable</h3>
+
+          <p>
+            I prefer strategies that can move beyond a presentation and become
+            real content, campaigns, processes and measurable next steps.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="experience-heading">
+
+      <h2 id="experience-heading">Professional Experience</h2>
+
+      <div class="card">
+
+        <p class="experience-title">
+          <strong>Business Operations &amp; Customer Operations</strong>
+        </p>
+
+        <p>
+          3+ years of practical experience across business operations,
+          customer-facing work, inventory control, financial transactions,
+          reporting and process improvement.
+        </p>
+
+        <p>
+          This experience gives me an operational perspective on strategy:
+          good ideas need to work not only on paper, but within real customers,
+          teams, processes and business constraints.
+        </p>
+
+        <p class="strengths">
+          <strong>Relevant strengths:</strong>
+          Analytical thinking · Customer understanding · Reporting ·
+          Process improvement · Cross-functional execution
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
+
+    <h2 id="contact-heading">Let’s Connect</h2>
+
+    <p>
+      I’m open to opportunities across strategy, growth, product marketing,
+      customer experience, commercial strategy and business operations.
+    </p>
+
+    <p class="contact-name">
+      Onuh Chidera Precious
+    </p>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Onuh Chidera Precious · Strategy &amp; Creative Portfolio
+  </footer>
+
 </div>
-</section>
 
-<section>
-<h2>Selected work</h2>
-<p class="section-intro">A few examples of how I approach a brief: start with the audience, find the insight, build the idea, then connect it to a business objective.</p>
-<div class="grid">
-<article class="card"><div class="type">Brand Strategy</div><h3>Dior, Gucci & Louis Vuitton</h3><p>Brand analyses focused on positioning, customer psychology, differentiation, brand experience and the reasons premium brands remain culturally relevant.</p></article>
-<article class="card"><div class="type">Growth & Marketing</div><h3>FreshDrop Laundry</h3><p>A customer-focused marketing concept built around convenience, trust and doorstep delivery, including positioning and messaging for a local service business.</p></article>
-<article class="card"><div class="type">Content Strategy</div><h3>Unified Dating</h3><p>Content planning and social ideas designed to create emotional connection, improve consistency and turn a brand message into short-form content people can relate to.</p></article>
-<article class="card"><div class="type">Campaign Strategy</div><h3>SeekProv — Owerri Launch</h3><p><strong>“Who’s Your Person?”</strong> — a local launch campaign built around the familiar behaviour of asking friends or WhatsApp contacts for trusted service recommendations. The idea reframes SeekProv as another way to find the right person when you need a service.</p></article>
-</div>
-</section>
-
-<section>
-<h2>How I think</h2>
-<div class="grid">
-<article class="card"><h3>Start with behaviour</h3><p>I look for what people already do, say or struggle with before jumping into content or tactics.</p></article>
-<article class="card"><h3>Find the simple insight</h3><p>The strongest ideas often come from a familiar human truth expressed in a way that feels natural to the audience.</p></article>
-<article class="card"><h3>Connect idea to objective</h3><p>A creative idea should have a reason to exist — awareness, engagement, acquisition, retention or a clearer customer experience.</p></article>
-<article class="card"><h3>Keep execution practical</h3><p>I prefer strategies that can actually be turned into content, campaigns, processes and measurable next steps.</p></article>
-</div>
-</section>
-
-<section>
-<h2>Professional experience</h2>
-<div class="card"><p><strong>Business Operations & Customer Operations</strong></p><p>3+ years across operations, customer-facing work, inventory control, financial transactions, reporting and process improvement. This practical operating experience shapes how I approach strategy: ideas need to work in the real world, not just look good on paper.</p></div>
-</section>
-
-<div class="contact"><h2>Let’s connect</h2><p>I’m interested in opportunities across strategy, growth, product marketing, customer experience, commercial and business operations.</p><p><strong>Onuh Chidera Precious</strong></p></div>
-<footer>© 2026 Onuh Chidera Precious · Strategy & Creative Portfolio</footer>
-</div>
 </body>
 </html>
